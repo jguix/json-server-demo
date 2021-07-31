@@ -22,7 +22,7 @@ const App = () => {
   }, [query]);
 
   const loadEmployees = async (page: number, limit: number, query = "") => {
-    const url = `http://localhost:3001/employees?_page=${page}&_limit=${limit}&q=${query}`;
+    const url = `/employees?_page=${page}&_limit=${limit}&q=${query}`;
     const _employees = await axios
       .get<Employee[]>(url)
       .then(({ data }) => data);
