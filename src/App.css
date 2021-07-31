@@ -28,7 +28,10 @@
   color: #999999;
   border: none;
   border-bottom-style: solid;
-  border-bottom-width: 2;
+  border-bottom-width: 2px;
+}
+
+.search_form--input:focus {
   outline: none;
 }
 
