@@ -22,7 +22,7 @@
   },
   "scripts": {
     "create-db": "node src/db/index.js",
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch src/db/db.json --port 3001\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
